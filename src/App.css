@@ -86,3 +86,30 @@ h1 {
   border-color: rgb(42, 102, 57);
   margin: 10px;
 }
+
+/*  */
+/* Homepage */
+
+.personalInfo {
+  border: solid;
+  border-color: rgb(42, 102, 57);
+}
+
+/*  */
+/* Header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.constactLink {
+  height: 25px;
+}
