@@ -5,7 +5,7 @@ class Homepage extends Component {
   render() {
     return (
       <div>
-        <h2>Homepage Header</h2>
+        <h2>Homepage</h2>
         <img
           src="https://nofilmschool.com/sites/default/files/styles/article_wide/public/rambo_0.jpg?itok=K3d91BmS"
           alt="me"

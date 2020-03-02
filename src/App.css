@@ -1,3 +1,6 @@
+/*  */
+/* General */
+
 * {
   color: white;
   background-color: rgb(15, 24, 16);
@@ -18,13 +21,15 @@ h1 {
   font-weight: 900;
 }
 
+/*  */
 /* NAV */
+
 .topnav {
   margin-left: 0px;
   background-color: rgb(15, 24, 16);
   overflow: hidden;
   border: solid;
-  border-color: gray;
+  border-color: rgb(42, 102, 57);
 }
 
 .topnav a {
@@ -51,8 +56,10 @@ h1 {
 
 .link {
   margin: 10px;
+  background-color: white;
 }
 
+/*  */
 /* Portfolio */
 
 .screenshot {
@@ -63,11 +70,19 @@ h1 {
 
 .portfolioPiece {
   border: solid;
-  color: gray;
+  border-color: rgb(42, 102, 57);
   margin-bottom: 20px;
 }
 
 .button {
   background-color: wheat;
   color: black;
+}
+
+/*  */
+/* Links */
+.myAccounts {
+  border: solid;
+  border-color: rgb(42, 102, 57);
+  margin: 10px;
 }

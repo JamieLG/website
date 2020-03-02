@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ncNews from "../Images/Screenshot from 2020-03-02 19-29-59.png";
 import { Link } from "@reach/router";
-import Button from "@material-ui/core/Button";
 
 class Portfolio extends Component {
   state = {
