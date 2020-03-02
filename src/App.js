@@ -26,7 +26,6 @@ class App extends Component {
     );
   }
   setCurrentPage = page => {
-    console.log(this.state.currentPage);
     this.setState({ currentPage: page });
   };
 }

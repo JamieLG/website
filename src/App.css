@@ -6,6 +6,10 @@
   margin-right: 10px;
 }
 
+a {
+  margin-left: 0px;
+}
+
 .link {
   width: 20%;
 }
@@ -40,14 +44,30 @@ h1 {
 }
 
 .topnav a.active {
-  background-color: red;
+  text-decoration: underline;
   color: white;
   margin-left: 10px;
+}
+
+.link {
+  margin: 10px;
 }
 
 /* Portfolio */
 
 .screenshot {
   width: 80%;
-  justify-content: center;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+
+.portfolioPiece {
+  border: solid;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: wheat;
+  color: black;
 }
