@@ -8,8 +8,15 @@ function Header(props) {
       <h1 className="siteHeader">Jamie Gormley</h1>
       <div className="contactInfo">
         <p className="siteHeaderEmail">JamieGormley1987@Outlook.com</p>
-        <Link to="//www.linkedin.com/in/jamie-gormley-086802184/">
-          <img className="constactLink" src={linkedInImg}></img>
+        <Link
+          className="headerLink"
+          to="//www.linkedin.com/in/jamie-gormley-086802184/"
+        >
+          <img
+            className="constactLink"
+            src={linkedInImg}
+            alt="linkedin logo"
+          ></img>
         </Link>
       </div>
     </div>

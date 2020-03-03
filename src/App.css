@@ -107,9 +107,14 @@ h1 {
 .contactInfo {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .constactLink {
   height: 25px;
+  margin-right: 0px;
+}
+
+.headerLink {
+  width: fit-content;
+  margin-left: auto;
 }
