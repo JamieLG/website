@@ -79,6 +79,21 @@ h1 {
   color: black;
 }
 
+.portfolioHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.portfolioIconHolder {
+  height: 30px;
+  margin-top: 10px;
+}
+
+.portfolioIcon {
+  height: 40px;
+}
+
 /*  */
 /* Links */
 .myAccounts {
@@ -93,6 +108,13 @@ h1 {
 .personalInfo {
   border: solid;
   border-color: rgb(42, 102, 57);
+}
+
+.homepageImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 /*  */

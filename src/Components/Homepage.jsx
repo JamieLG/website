@@ -7,22 +7,14 @@ class Homepage extends Component {
       <div>
         <h2>Homepage</h2>
         <img
-          src="https://nofilmschool.com/sites/default/files/styles/article_wide/public/rambo_0.jpg?itok=K3d91BmS"
+          className="homepageImg"
+          src="https://f0.pngfuel.com/png/167/310/beige-and-red-face-illustration-eye-mouth-smile-lip-eye-png-clip-art-thumbnail.png"
           alt="me"
         />
         <div className="personalInfo">
           <p>
-            Introduction bla bla bla bla bla bla bla. Bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla. Bla bla
-            bla bla bla bla bla bla bla bla bla bla bla. Introduction bla bla
-            bla bla bla bla bla. Bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla. Bla bla bla bla bla bla bla bla
-            bla bla bla bla bla. Introduction bla bla bla bla bla bla bla. Bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla. Bla bla bla bla bla bla bla bla bla bla bla bla bla.
-            Introduction bla bla bla bla bla bla bla. Bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla. Bla bla
-            bla bla bla bla bla bla bla bla bla bla bla.{" "}
+            A little background information? I dont want to put too much on here
+            THATS WHAT A CV IS FOR!
           </p>
           <h2>Work experience</h2>
           <p>I did this</p>

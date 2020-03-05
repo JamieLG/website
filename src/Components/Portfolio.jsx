@@ -1,10 +1,17 @@
 import React, { Component } from "react";
-import ncNews from "../Images/Screenshot from 2020-03-02 19-29-59.png";
+import ncNewsFe from "../Images/Screenshot from 2020-03-02 19-29-59.png";
+import ncNewsBe from "../Images/Screenshot from 2020-03-03 08-54-24.png";
 import { Link } from "@reach/router";
+import cssIcon from "../Images/css.png";
+import htmlIcon from "../Images/html.jpg";
+import reactIcon from "../Images/react.png";
+import jsIcon from "../Images/js.png";
 
 class Portfolio extends Component {
   state = {
-    nCNewsFe: false
+    nCNewsFe: false,
+    nCNewsBe: false,
+    nCProject: false
   };
   render() {
     return (
@@ -14,15 +21,22 @@ class Portfolio extends Component {
           <h3>NC-Project</h3>
         </div>
         <div className="portfolioPiece">
-          <h3>NC-News Frontend</h3>
+          <div className="portfolioHeader">
+            <h3>NC-News Frontend</h3>
+            <div className="portfolioIconHolder">
+              <img className="portfolioIcon" src={reactIcon} alt="CSS icon" />
+              <img className="portfolioIcon" src={jsIcon} alt="CSS icon" />
+              <img className="portfolioIcon" src={cssIcon} alt="CSS icon" />
+              <img className="portfolioIcon" src={htmlIcon} alt="CSS icon" />
+            </div>
+          </div>
           <p>
-            {" "}
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla{" "}
+            Website letting users login, read and post comments and articles
+            using my API ("NC-News Backend").
           </p>
+          <Link to="//newsfe.netlify.com/">
+            <p>https://newsfe.netlify.com/</p>
+          </Link>
           <button
             onClick={() => {
               this.showElement("nCNewsFe");
@@ -34,7 +48,7 @@ class Portfolio extends Component {
           </button>
           <br></br>
           {this.state.nCNewsFe === true && (
-            <img className="screenshot" src={ncNews}></img>
+            <img className="screenshot" src={ncNewsFe}></img>
           )}
           <Link to="//github.com/JamieLG/fe-nc-news">
             <img
@@ -45,26 +59,22 @@ class Portfolio extends Component {
         </div>
         <div className="portfolioPiece">
           <h3>NC-News Backend</h3>
-          <p>
-            {" "}
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla{" "}
-          </p>
+          <p>API serving articles and comments . </p>
+          <Link to="//jamie-backendapp.herokuapp.com/api">
+            <p>https://jamie-backendapp.herokuapp.com/api</p>
+          </Link>
           <button
             onClick={() => {
-              this.showElement("nCNewsFe");
+              this.showElement("nCNewsBe");
             }}
           >
-            {this.state.nCNewsFe === false
+            {this.state.nCNewsBe === false
               ? "Show Screenshot"
               : "Hide Screenshot"}
           </button>
           <br></br>
-          {this.state.nCNewsFe === true && (
-            <img className="screenshot" src={ncNews}></img>
+          {this.state.nCNewsBe === true && (
+            <img className="screenshot" src={ncNewsBe}></img>
           )}
           <Link to="//github.com/JamieLG/fe-nc-news">
             <img
