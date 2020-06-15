@@ -6,10 +6,11 @@ import Nav from "./Components/Nav";
 import Homepage from "./Components/Homepage";
 import Portfolio from "./Components/Portfolio";
 import Links from "./Components/Links";
+import Test from "./Components/Test";
 
 class App extends Component {
   state = {
-    currentPage: "home"
+    currentPage: "home",
   };
   render() {
     return (
@@ -17,15 +18,17 @@ class App extends Component {
         <Header />
         <Nav currentPage={this.state.currentPage} />
         <Router>
-          <Homepage path="/home" setCurrentPage={this.setCurrentPage} />
+          <Homepage path="/" setCurrentPage={this.setCurrentPage} />
           <Portfolio path="/portfolio" setCurrentPage={this.setCurrentPage} />
           <Links path="/links" setCurrentPage={this.setCurrentPage} />
+
+          <Test path="/test" setCurrentPage={this.setCurrentPage} />
           <Homepage path="/*" />
         </Router>
       </div>
     );
   }
-  setCurrentPage = page => {
+  setCurrentPage = (page) => {
     this.setState({ currentPage: page });
   };
 }
