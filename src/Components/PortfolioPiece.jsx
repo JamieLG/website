@@ -11,7 +11,6 @@ export default class PortfolioPiece extends Component {
         <div className="portfolioHeader">
           <h3>{this.props.header}</h3>
           <div className="portfolioIconHolder">
-            {console.log(this.props.icons)}
             {this.props.icons.map((icon) => {
               return (
                 <img className="portfolioIcon" src={icon} alt="CSS icon" />
@@ -29,10 +28,9 @@ export default class PortfolioPiece extends Component {
             );
           })}
         </div>
-        {this.props.img && (
+        {this.props.img !== undefined && (
           <>
             <button
-              className="portfolioShowButton"
               onClick={() => {
                 this.showElement("show");
               }}
@@ -42,18 +40,21 @@ export default class PortfolioPiece extends Component {
                 : "Hide Screenshot"}
             </button>
             <br></br>
+            {this.props.img.map((screenshot) => {
+              return (
+                <>
+                  {this.state.show === true && (
+                    <img
+                      className="screenshot"
+                      src={screenshot}
+                      alt="screenshot"
+                    ></img>
+                  )}
+                </>
+              );
+            })}
           </>
         )}
-        {this.props.img &&
-          this.props.img.map((screenshot) => {
-            return (
-              <>
-                {this.state.show === true && (
-                  <img className="screenshot" src={screenshot}></img>
-                )}
-              </>
-            );
-          })}
 
         <Link to={this.props.gitLink}>
           <img

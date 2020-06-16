@@ -5,22 +5,24 @@ function Nav(props) {
   return (
     <div>
       <div className="topnav">
-        <Link className={props.currentPage === "home" && "active"} to="/">
+        <Link
+          className={props.currentPage === "home" ?? "active" | "inactive"}
+          to="/"
+        >
           Home
         </Link>
         <Link
-          className={props.currentPage === "portfolio" && "active"}
+          className={props.currentPage === "portfolio" ?? "active" | "inactive"}
           to="/portfolio"
         >
           Portfolio
         </Link>
-        <Link className={props.currentPage === "links" && "active"} to="/links">
+        <Link
+          className={props.currentPage === "links" ?? "active" | "inactive"}
+          to="/links"
+        >
           Links
         </Link>
-
-        {/* <Link className={props.currentPage === "test" && "active"} to="/test">
-          Test
-        </Link> */}
       </div>
     </div>
   );

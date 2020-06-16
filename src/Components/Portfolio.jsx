@@ -65,7 +65,6 @@ class Portfolio extends Component {
   }
   showElement = (object) => {
     this.setState((currentState) => {
-      console.log("sfsaf");
       return { [object]: !currentState[object] };
     });
   };
