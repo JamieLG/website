@@ -20,16 +20,18 @@ export default class PortfolioPiece extends Component {
           </div>
         </div>
         <p>{this.props.description}</p>
-        {this.props.hostedLink.map((link) => {
-          return (
-            <Link to={link}>
-              <p>https:{link}</p>
-            </Link>
-          );
-        })}
+        <div className="portfolioLinks">
+          {this.props.hostedLink.map((link) => {
+            return (
+              <>
+                <Link to={link}>https:{link}</Link> <br></br>
+              </>
+            );
+          })}
+        </div>
         {this.props.img && (
           <>
-            <button
+            <button className="portfolioShowButton"
               onClick={() => {
                 this.showElement("show");
               }}

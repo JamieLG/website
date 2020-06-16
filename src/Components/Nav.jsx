@@ -18,9 +18,9 @@ function Nav(props) {
           Links
         </Link>
 
-        <Link className={props.currentPage === "test" && "active"} to="/test">
+        {/* <Link className={props.currentPage === "test" && "active"} to="/test">
           Test
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
