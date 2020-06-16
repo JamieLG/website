@@ -59,6 +59,7 @@ export default class PortfolioPiece extends Component {
           <img
             className="link"
             src="https://danielgibbs.co.uk/wp-content/uploads/2013/08/github-logo.png"
+            alt="linkpic"
           ></img>
         </Link>
       </div>

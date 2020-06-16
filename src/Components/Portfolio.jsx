@@ -38,7 +38,7 @@ class Portfolio extends Component {
           header="Game Website Backend"
           icons={[phaserIcon, socketIcon, expressIcon, jsIcon]}
           description="Express server using Socket.io to send and recieve messages. Using Phaser.io when players connect to the server it renders a game serverside and keeps track of each players information, it also hosts a chatroom for players to communicate. "
-          hostedLink={["//phasersocketgame.herokuapp.com/", ,]}
+          hostedLink={["//phasersocketgame.herokuapp.com/"]}
           gitLink="//github.com/JamieLG/gamebackend"
         />
         <PortfolioPiece
