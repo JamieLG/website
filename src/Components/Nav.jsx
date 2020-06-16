@@ -6,19 +6,19 @@ function Nav(props) {
     <div>
       <div className="topnav">
         <Link
-          className={props.currentPage === "home" ?? "active" | "inactive"}
+          className={props.currentPage === "home" ? "active" : "inactive"}
           to="/"
         >
           Home
         </Link>
         <Link
-          className={props.currentPage === "portfolio" ?? "active" | "inactive"}
+          className={props.currentPage === "portfolio" ? "active" : "inactive"}
           to="/portfolio"
         >
           Portfolio
         </Link>
         <Link
-          className={props.currentPage === "links" ?? "active" | "inactive"}
+          className={props.currentPage === "links" ? "active" : "inactive"}
           to="/links"
         >
           Links
