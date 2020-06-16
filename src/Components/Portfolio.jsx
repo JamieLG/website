@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import ncNewsFe from "../Images/Screenshot from 2020-03-02 19-29-59.png";
 import ncNewsBe from "../Images/Screenshot from 2020-03-03 08-54-24.png";
+import websiteFrontScreen1 from "../Images/quizwebsite.png";
+import websiteFrontScreen2 from "../Images/quizwebsite1.png";
+import websiteFrontScreen3 from "../Images/quizwebsite2.png";
 import cssIcon from "../Images/css.png";
 import htmlIcon from "../Images/html.jpg";
 import reactIcon from "../Images/react.png";
@@ -29,6 +32,7 @@ class Portfolio extends Component {
             "//www.youtube.com/watch?v=XCPmVTga2ro/",
           ]}
           gitLink="//github.com/JamieLG/gamefrontend"
+          img={[websiteFrontScreen1, websiteFrontScreen2, websiteFrontScreen3]}
         />
         <PortfolioPiece
           header="Game Website Backend"
@@ -43,15 +47,15 @@ class Portfolio extends Component {
           description="Reddit style news aggregation website created using React letting users login, read and post comments and articles and vote on comments using my NC-News Backend API. The first website i made."
           hostedLink={["//newsfe.netlify.com/"]}
           gitLink="//github.com/JamieLG/fe-nc-news"
-          img={ncNewsFe}
+          img={[ncNewsFe]}
         />
         <PortfolioPiece
           header="NC-News Backend"
           icons={[expressIcon, jsIcon]}
-          description="Restful API"
+          description="Restful API built with Express. Full error handling and testing."
           hostedLink={["//jamie-backendapp.herokuapp.com/api"]}
           gitLink="//github.com/JamieLG/be-nc-news"
-          img={ncNewsBe}
+          img={[ncNewsBe]}
         />
       </div>
     );
