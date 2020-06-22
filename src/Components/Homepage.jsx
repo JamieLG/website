@@ -9,10 +9,6 @@ class Homepage extends Component {
         <div className="homepageInfo">
           <img className="homepageImg" src={jamie} alt="me" />
           <p className="homepageExplain">
-            Please forgive how basic the website currently is, with the pandemic
-            and personal commitments I havn't had enough time to work on it and
-            I don't want to use a template. <br></br>
-            <br></br>
             With limited space on my CV i wanted a place to add a little more
             information about the work i have done and a place to link videos,
             screenshots and other websites with information about me and my

@@ -17,16 +17,17 @@ export default class PortfolioPiece extends Component {
               );
             })}
           </div>
-        </div>
-        <p>{this.props.description}</p>
-        <div className="portfolioLinks">
-          {this.props.hostedLink.map((link) => {
-            return (
-              <>
-                <Link to={link}>https:{link}</Link> <br></br>
-              </>
-            );
-          })}
+
+          <p>{this.props.description}</p>
+          <div className="portfolioLinks">
+            {this.props.hostedLink.map((link) => {
+              return (
+                <>
+                  <Link to={link}>{link}</Link> <br></br>
+                </>
+              );
+            })}
+          </div>
         </div>
         {this.props.img !== undefined && (
           <>
@@ -58,7 +59,7 @@ export default class PortfolioPiece extends Component {
 
         <Link to={this.props.gitLink}>
           <img
-            className="link"
+            className="link-link"
             src="https://danielgibbs.co.uk/wp-content/uploads/2013/08/github-logo.png"
             alt="linkpic"
           ></img>
