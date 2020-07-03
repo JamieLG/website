@@ -4,6 +4,7 @@
 * {
   color: white;
   background-color: rgb(15, 24, 16);
+  border-color: rgb(42, 102, 57);
   font-family: "Trade Winds";
   margin-left: 5px;
   margin-right: 5px;
@@ -32,9 +33,12 @@ button {
 /* NAV */
 
 .topnav {
-  background-color: rgb(15, 24, 16);
   overflow: hidden;
-  border: solid;
+  display: flex;
+  justify-content: center;
+  border-top: solid;
+  border-bottom: solid;
+  margin-top: 10px;
   border-color: rgb(42, 102, 57);
 }
 

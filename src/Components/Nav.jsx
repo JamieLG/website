@@ -3,8 +3,8 @@ import { Link } from "@reach/router";
 
 function Nav(props) {
   return (
-    <div>
-      <div className="topnav">
+    <div className="topnav">
+      <div>
         <Link
           className={props.currentPage === "home" ? "active" : "inactive"}
           to="/"
