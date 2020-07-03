@@ -24,6 +24,10 @@ h1 {
   border: 10px;
 }
 
+button {
+  margin-bottom: 10px;
+}
+
 /*  */
 /* NAV */
 
@@ -60,8 +64,8 @@ h1 {
 }
 
 .link-link {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   background-color: white;
   height: 80px;
   display: block;
@@ -72,9 +76,16 @@ h1 {
 /* Portfolio */
 
 .screenshot {
-  width: 80%;
+  width: 95%;
+  /* margin: 10px;
+  margin-bottom: 0px; */
   margin: 10px;
-  margin-bottom: 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  border-width: thin;
+  border-color: rgb(42, 102, 57);
 }
 
 .portfolioPiece {
@@ -179,6 +190,9 @@ h1 {
   margin-right: 20px;
 }
 
+/*  */
+/* Mobile view */
+
 @media (max-width: 600px) {
   .homepageInfo {
     flex-direction: column;
@@ -214,5 +228,6 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    margin-top: 0px;
   }
 }
