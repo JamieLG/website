@@ -23,9 +23,9 @@ class Homepage extends Component {
       </div>
     );
   }
-  componentDidMount() {
-    this.props.setCurrentPage("home");
-  }
+  // componentDidMount() {
+  //   this.props.setCurrentPage("home");
+  // }
 }
 
 export default Homepage;

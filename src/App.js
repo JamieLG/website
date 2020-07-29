@@ -9,7 +9,7 @@ import Links from "./Components/Links";
 
 class App extends Component {
   state = {
-    currentPage: "home",
+    currentPage: "portfolio",
   };
   render() {
     return (
@@ -17,8 +17,8 @@ class App extends Component {
         <Header />
         <Nav currentPage={this.state.currentPage} />
         <Router>
-          <Homepage path="/" setCurrentPage={this.setCurrentPage} />
-          <Portfolio path="/portfolio" setCurrentPage={this.setCurrentPage} />
+          {/* <Homepage path="/" setCurrentPage={this.setCurrentPage} /> */}
+          <Portfolio path="/*" setCurrentPage={this.setCurrentPage} />
           <Links path="/links" setCurrentPage={this.setCurrentPage} />
 
           <Homepage path="/*" />
