@@ -1,26 +1,26 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from 'react';
 import { Link } from "@reach/router";
 
-export default class PortfolioPiece extends Component {
-  state = {
-    show: false,
-  };
-  render() {
+
+  function PortfolioPiece(props) {
+
+  const [shown, setShown] = useState('false');
+
     return (
       <div className="portfolioPiece">
         <div className="portfolioHeader">
-          <h3>{this.props.header}</h3>
+          <h3>{props.header}</h3>
           <div className="portfolioIconHolder">
-            {this.props.icons.map((icon) => {
+            {props.icons.map((icon) => {
               return (
                 <img className="portfolioIcon" src={icon} alt="CSS icon" />
               );
             })}
           </div>
 
-          <p>{this.props.description}</p>
+          <p>{props.description}</p>
           <div className="portfolioLinks">
-            {this.props.hostedLink.map((link) => {
+            {props.hostedLink.map((link) => {
               return (
                 <>
                   <Link to={link}>{link}</Link> <br></br>
@@ -29,22 +29,22 @@ export default class PortfolioPiece extends Component {
             })}
           </div>
         </div>
-        {this.props.img !== undefined && (
+        {props.img !== undefined && (
           <>
             <button
               onClick={() => {
-                this.showElement("show");
+               setShown(!shown);
               }}
             >
-              {this.state.show === false
+              {shown === false
                 ? "Show Screenshot"
                 : "Hide Screenshot"}
             </button>
             <br></br>
-            {this.props.img.map((screenshot) => {
+            {props.img.map((screenshot) => {
               return (
                 <>
-                  {this.state.show === true && (
+                  {shown === true && (
                     <img
                       className="screenshot"
                       src={screenshot}
@@ -57,7 +57,7 @@ export default class PortfolioPiece extends Component {
           </>
         )}
 
-        <Link to={this.props.gitLink}>
+        <Link to={props.gitLink}>
           <img
             className="link-link"
             src="https://danielgibbs.co.uk/wp-content/uploads/2013/08/github-logo.png"
@@ -67,10 +67,5 @@ export default class PortfolioPiece extends Component {
       </div>
     );
   }
-  showElement = (object) => {
-    this.setState((currentState) => {
-      let newShowState = !currentState.show;
-      return { show: newShowState };
-    });
-  };
-}
+
+  export default PortfolioPiece;

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from 'react';
 import ncNewsFe from "../Images/Screenshot from 2020-03-02 19-29-59.png";
 import ncNewsBe from "../Images/Screenshot from 2020-03-03 08-54-24.png";
 import websiteFrontScreen1 from "../Images/quizwebsite.png";
@@ -13,13 +13,12 @@ import jsIcon from "../Images/js.png";
 import expressIcon from "../Images/express-logo.png";
 import PortfolioPiece from "./PortfolioPiece";
 
-class Portfolio extends Component {
-  state = {
-    nCNewsFe: false,
-    nCNewsBe: false,
-    nCProject: false,
-  };
-  render() {
+function Portfolio(props) {
+
+  useEffect(() => {    
+    props.setCurrentPage("portfolio");  
+  });
+
     return (
       <div>
         <h2>Portfolio</h2>
@@ -60,14 +59,5 @@ class Portfolio extends Component {
       </div>
     );
   }
-  componentDidMount() {
-    this.props.setCurrentPage("portfolio");
-  }
-  showElement = (object) => {
-    this.setState((currentState) => {
-      return { [object]: !currentState[object] };
-    });
-  };
-}
 
 export default Portfolio;
