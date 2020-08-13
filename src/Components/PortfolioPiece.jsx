@@ -4,13 +4,11 @@ import { Link } from "@reach/router";
 
   function PortfolioPiece(props) {
 
+  const [shown, setShown] = useState(false)
 
-  const [shown, setShown] = useState('true')
-
-
-
-
- 
+  useEffect(() => {    
+    setShown(false);  
+  }, []);
 
     return (
       <div className="portfolioPiece">
@@ -42,9 +40,9 @@ import { Link } from "@reach/router";
                setShown(!shown);
               }}
             >
-              {shown === true
-                ? "Hide Screenshot"
-                : "Show Screenshot"}
+              {shown === false
+                ? "Show Screenshot"
+                : "Hide Screenshot"}
             </button>
             <br></br>
             {props.img.map((screenshot) => {
