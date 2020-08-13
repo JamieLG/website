@@ -4,7 +4,13 @@ import { Link } from "@reach/router";
 
   function PortfolioPiece(props) {
 
-  const [shown, setShown] = useState('false');
+
+  const [shown, setShown] = useState('true')
+
+
+
+
+ 
 
     return (
       <div className="portfolioPiece">
@@ -36,9 +42,9 @@ import { Link } from "@reach/router";
                setShown(!shown);
               }}
             >
-              {shown === false
-                ? "Show Screenshot"
-                : "Hide Screenshot"}
+              {shown === true
+                ? "Hide Screenshot"
+                : "Show Screenshot"}
             </button>
             <br></br>
             {props.img.map((screenshot) => {

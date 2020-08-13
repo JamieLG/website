@@ -17,7 +17,7 @@ function Portfolio(props) {
 
   useEffect(() => {    
     props.setCurrentPage("portfolio");  
-  });
+  }, []);
 
     return (
       <div>
